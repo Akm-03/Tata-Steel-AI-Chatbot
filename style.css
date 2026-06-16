@@ -1,0 +1,76 @@
+/* Base Resets & Variables */
+:root {
+    --bg-dark: #0f172a;
+    --bg-panel: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-blue: #0ea5e9;
+    --accent-hover: #0284c7;
+    --danger: #ef4444;
+    --success: #22c55e;
+    --border: #334155;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+body { background-color: var(--bg-dark); color: var(--text-main); height: 100vh; overflow: hidden; }
+
+/* --- Login Overlay --- */
+#login-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.95); display: flex; justify-content: center; align-items: center; z-index: 1000; }
+.login-card { background: var(--bg-panel); padding: 40px; border-radius: 12px; width: 380px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid var(--border); text-align: center; }
+.logo-area { margin-bottom: 30px; }
+.logo-area h2 { color: var(--accent-blue); font-size: 28px; }
+.logo-area p { color: var(--text-muted); font-size: 14px; }
+.login-card input { width: 100%; padding: 12px; margin-bottom: 15px; background: var(--bg-dark); border: 1px solid var(--border); color: white; border-radius: 6px; outline: none; }
+.login-card input:focus { border-color: var(--accent-blue); }
+.login-card button { width: 100%; padding: 12px; background: var(--accent-blue); color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.login-card button:hover { background: var(--accent-hover); }
+#login-error { color: var(--danger); font-size: 13px; margin-top: 10px; display: none; }
+
+/* --- Dashboard Layout --- */
+#dashboard { display: flex; height: 100vh; }
+
+/* Sidebar */
+.sidebar { width: 260px; background: var(--bg-panel); border-right: 1px solid var(--border); display: flex; flex-direction: column; padding: 20px; }
+.brand { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
+.brand h2 { font-size: 20px; color: white; }
+.badge { background: rgba(14, 165, 233, 0.2); color: var(--accent-blue); padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.sidebar nav { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.sidebar nav a { color: var(--text-muted); text-decoration: none; padding: 12px; border-radius: 6px; transition: 0.2s; }
+.sidebar nav a:hover, .sidebar nav a.active { background: var(--bg-dark); color: var(--accent-blue); }
+.user-profile { display: flex; align-items: center; gap: 15px; padding-top: 20px; border-top: 1px solid var(--border); }
+.avatar { font-size: 24px; }
+.user-details { display: flex; flex-direction: column; }
+.logout-btn { background: none; border: none; color: var(--danger); cursor: pointer; text-align: left; font-size: 12px; margin-top: 4px; }
+
+/* Main Content */
+.content { flex: 1; display: flex; flex-direction: column; padding: 20px; gap: 20px; }
+
+/* Top Metrics */
+.top-metrics { display: flex; gap: 20px; }
+.metric-card { flex: 1; background: var(--bg-panel); padding: 20px; border-radius: 10px; border: 1px solid var(--border); display: flex; flex-direction: column; }
+.metric-card .label { color: var(--text-muted); font-size: 14px; margin-bottom: 5px; }
+.metric-card .value { font-size: 28px; font-weight: bold; }
+.text-blue { color: var(--accent-blue); }
+.text-red { color: var(--danger); }
+.text-green { color: var(--success); }
+
+/* Chat Container */
+.chat-container { flex: 1; background: var(--bg-panel); border-radius: 10px; border: 1px solid var(--border); display: flex; flex-direction: column; overflow: hidden; }
+#chat-history { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; }
+
+/* Chat Bubbles */
+.message { max-width: 75%; padding: 14px 18px; border-radius: 8px; font-size: 15px; line-height: 1.5; }
+.user-msg { background: var(--accent-blue); color: white; align-self: flex-end; border-bottom-right-radius: 0; }
+.bot-msg { background: var(--bg-dark); color: var(--text-main); align-self: flex-start; border: 1px solid var(--border); border-bottom-left-radius: 0; }
+.sql-box { background: #000; color: #38bdf8; padding: 10px; border-radius: 5px; font-family: monospace; font-size: 13px; margin-top: 12px; overflow-x: auto; border: 1px solid var(--border);}
+
+/* Chat Controls */
+.chat-controls { padding: 20px; background: var(--bg-dark); border-top: 1px solid var(--border); }
+.quick-prompts { display: flex; gap: 10px; margin-bottom: 15px; }
+.quick-prompts button { background: var(--bg-panel); border: 1px solid var(--border); color: var(--text-muted); padding: 8px 12px; border-radius: 20px; font-size: 13px; cursor: pointer; transition: 0.2s; }
+.quick-prompts button:hover { border-color: var(--accent-blue); color: white; }
+.input-row { display: flex; gap: 10px; }
+.input-row input { flex: 1; padding: 15px; background: var(--bg-panel); border: 1px solid var(--border); color: white; border-radius: 8px; outline: none; font-size: 15px;}
+.input-row input:focus { border-color: var(--accent-blue); }
+.send-btn { padding: 0 30px; background: var(--accent-blue); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+.send-btn:hover { background: var(--accent-hover); }

@@ -1,0 +1,14 @@
+# Environments
+.env
+venv/
+env/
+
+# Firebase credentials
+firebase-credentials.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files (Optional: uncomment if you don't want to upload your CSVs to GitHub)
+# *.csv
