@@ -1,17 +1,17 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.egg-info/
-dist/
-build/
-*.egg
-
-# Environment
+# Environments
 .env
-.venv/
-env/
 venv/
+env/
+
+# Firebase credentials
+firebase-credentials.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files (Optional: uncomment if you don't want to upload your CSVs to GitHub)
+# *.csv
 
 # IDE
 .vscode/

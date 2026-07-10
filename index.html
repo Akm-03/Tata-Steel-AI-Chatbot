@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Sphere | Tata Steel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div id="login-overlay">
+        <div class="login-card">
+            <div class="logo-area">
+                <h2>🏭 Asset Sphere</h2>
+                <p>Tata Steel India Limited</p>
+            </div>
+            <input type="text" id="badge-input" placeholder="Enter Employee Badge ID">
+            <input type="password" id="password-input" placeholder="Password">
+            <button onclick="handleLogin()">Secure Login</button>
+            <p id="login-error">Invalid credentials. Try again.</p>
+        </div>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        
+        <aside class="sidebar">
+            <div class="brand">
+                <h2>Asset Sphere</h2>
+                <span class="badge">TSIL PRO</span>
+            </div>
+            <nav>
+                <a href="#" class="active">💬 AI Assistant</a>
+                <a href="#">📊 Plant Metrics</a>
+                <a href="#">⚠️ Live Alerts</a>
+                <a href="#">⚙️ Settings</a>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">👷</div>
+                <div class="user-details">
+                    <span id="user-display">Operator</span>
+                    <button onclick="handleLogout()" class="logout-btn">Logout</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            
+            <header class="top-metrics">
+                <div class="metric-card">
+                    <span class="label">Active Machines</span>
+                    <span class="value text-blue">12 / 17</span>
+                </div>
+                <div class="metric-card">
+                    <span class="label">Critical Deviations</span>
+                    <span class="value text-red">3</span>
+                </div>
+                <div class="metric-card">
+                    <span class="label">Safety Status</span>
+                    <span class="value text-green">Optimal</span>
+                </div>
+            </header>
+
+            <div class="chat-container">
+                <div id="chat-history">
+                    <div class="message bot-msg">
+                        Welcome to Asset Sphere AI. How can I assist with today's operations?
+                    </div>
+                </div>
+
+                <div class="chat-controls">
+                    <div class="quick-prompts">
+                        <button onclick="sendQuickPrompt('Generate shift summary for today')">📄 Shift Summary</button>
+                        <button onclick="sendQuickPrompt('Show me machines with high voltage deviations')">⚡ Voltage Anomalies</button>
+                        <button onclick="sendQuickPrompt('Check gas cutting compliance')">💨 Gas Compliance</button>
+                    </div>
+                    
+                    <div class="input-row">
+                        <input type="text" id="chat-input" placeholder="Ask about machine status, shifts, or deviations..." onkeypress="handleEnter(event)">
+                        <button class="send-btn" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
