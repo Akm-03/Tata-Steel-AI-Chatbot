@@ -1,0 +1,16 @@
+uid,name,email,is_tata_email,phno,roleid,role_name,hid,orgid,certificate_id,identification_no,operator_rfid,username,deleted,active_status,is_test_account,created_at,updated_at
+31,CNCPRA,cncpr6866a@tatasteel.com,True,9876543212.0,3,Operator,4.0,1,NIL,TSL,,CNCPR6866A,False,False,False,2024-08-16 10:32:29.819639+00:00,2024-10-17 13:05:44.507281+00:00
+16,Shashi Kant Nayak,shashi.nayak@tatasteel.com,True,7878787878.0,1,Staff/Engineer,8.0,1,TSL,TSL,,506341,False,False,False,2024-05-14 08:14:46.118124+00:00,2024-07-31 09:38:05.972869+00:00
+28,ARXPVA,arxpv8471a@tatasteel.com,True,7688881212.0,3,Operator,,1,NIL,TSL,,ARXPV8471A,False,False,False,2024-08-16 10:21:44.341102+00:00,2024-10-17 13:25:53.941885+00:00
+29,FQKPSQ,fqkps1033q@tatasteel.com,True,9876543210.0,1,Staff/Engineer,4.0,1,NIL,TSL,,FQKPS1033Q,False,False,False,2024-08-16 10:27:54.340838+00:00,2024-10-17 12:52:11.504504+00:00
+30,Little Operators man,lilps2204l@tatasteel.com,True,1234567890.0,3,Operator,4.0,1,NIL,TSL,,LILPS2204L,False,False,False,2024-08-16 10:30:28.974212+00:00,2024-10-17 13:10:45.767441+00:00
+10,Amarendran Kamak,agbpk3809l@tatasteel.com,True,8888888882.0,3,Operator,4.0,1,NIL,AA,,AGBPK3809L,False,False,False,2024-05-02 08:07:40.119972+00:00,2024-05-10 07:30:40.560719+00:00
+18,153243,153243@tatasteel.com,True,7688881212.0,1,Staff/Engineer,,1,NIL,TSL,,153243,False,False,False,2024-06-06 10:25:06.679865+00:00,2024-06-06 10:25:06.679865+00:00
+12,158348,158348@tatasteel.com,True,7688881212.0,3,Operator,,1,NIL,TSL,,158348,False,False,False,2024-05-10 08:18:20.691359+00:00,2024-05-10 08:18:20.691359+00:00
+37,Argha Sarkar,argha.sarkar@partners.tatasteel.com,True,6290873228.0,1,Staff/Engineer,8.0,1,12345,TSL,,,False,False,False,2024-10-28 10:13:52.973355+00:00,2024-10-28 10:13:52.973355+00:00
+35,Pritam Dangal,pritam.dangal@tatasteel.com,True,9264190126.0,1,Staff/Engineer,4.0,1,1234,TSL,,,False,False,False,2024-10-28 06:33:41.203202+00:00,2024-10-28 06:33:41.203202+00:00
+45,Amit Kumar,amit.kumar80@tatasteel.com,True,9123462338.0,1,Staff/Engineer,8.0,1,,,,808909,False,True,False,2025-02-19 11:59:22.382880+00:00,2025-02-19 11:59:22.382880+00:00
+43,Abhishek Saini,abhishek.saini1@tatasteel.com,True,8709477986.0,1,Staff/Engineer,8.0,1,,,,805644,False,False,False,2024-11-05 06:16:58.446321+00:00,2024-11-05 06:16:58.446321+00:00
+36,Prateek Ranjan,prateek.ranjan@partners.tatasteel.com,True,7488119747.0,4,Admin/Manager,8.0,1,12345,TSL,,,False,False,False,2024-10-28 10:12:54.016165+00:00,2024-10-28 11:00:55.391298+00:00
+34,Prasenjit,prasenjit.mahato@tatasteel.com,True,7777777777.0,1,Staff/Engineer,15.0,1,001,0101,,,False,True,False,2024-10-25 13:29:07.422318+00:00,2024-10-25 13:29:07.422318+00:00
+33,Manohar Kotal,manohar.kotal@tatasteel.com,True,7788997744.0,1,Staff/Engineer,4.0,1,506055,az8,,,False,False,False,2024-10-23 13:08:42.572375+00:00,2024-10-23 13:08:42.572375+00:00

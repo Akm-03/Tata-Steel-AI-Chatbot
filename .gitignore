@@ -27,7 +27,4 @@ Thumbs.db
 db_audit.py
 db_audit_output.txt
 audit2.py
-get_views.py
-
-# Cleaned output data (large CSVs)
-tata_steel_cleaning/cleaned_output/
+get_views.py
