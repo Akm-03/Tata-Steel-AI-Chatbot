@@ -21,7 +21,7 @@ if user_query := st.chat_input("E.g., Which machines had high voltage deviations
 
     # Show AI response
     with st.chat_message("assistant"):
-        with st.spinner("Analyzing Snowflake data..."):
+        with st.spinner("Analyzing Database..."):
             try:
                 response = requests.post("http://localhost:8000/chat", json={"message": user_query})
                 if response.status_code == 200:

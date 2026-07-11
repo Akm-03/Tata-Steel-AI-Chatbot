@@ -50,7 +50,7 @@ async function sendMessage() {
     inputField.value = "";
 
     // Show temporary typing indicator
-    const thinkingId = appendMessage("bot", "<i>Querying Snowflake Data Warehouse...</i>");
+    const thinkingId = appendMessage("bot", "<i>Querying Database...</i>");
 
     try {
         // Communicate with FastAPI Backend
